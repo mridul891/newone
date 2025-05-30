@@ -1,5 +1,5 @@
 import express from "express";
-import { newsController } from "./server/controller/news.controller.js";
+import { newsController } from "../controller/news.controller.js";
 
 console.log(newsController);
 

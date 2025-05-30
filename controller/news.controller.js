@@ -1,9 +1,7 @@
 import { News } from "../model/News.js"
 
 export const newsController = async ( req , res) =>{
-    const data = await News.find({
-        disasterType : req.body.type
-    })
+    const data = await News.find()
 
-    console.log(data)
+    res.json(data)
 }
